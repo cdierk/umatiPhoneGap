@@ -1,4 +1,19 @@
 <html>
+<body>
+
+<div class='header'><h1>Home</h1></div>
+<div class='search-view'>
+<input class='search-key' type="text"/>
+<ul class='employee-list'></ul>
+</div>
+
+<script src="lib/jquery-1.8.2.min.js"></script>
+<script src="js/storage/memory-store.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+<html>
   <head>
     <title>Umati Controller</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -7,9 +22,6 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src="lib/jquery-1.8.2.min.js"></script>
-	<script src="js/storage/memory-store.js"></script>
-	<script src="js/main.js"></script>
     <!--
     <link rel="stylesheet" href="/jquery-ui-1.9.2.css" />
     <script src="/jquery-1.7.1.min.js"></script>
@@ -27,10 +39,12 @@
       });
     </script>
   </head>
-  <body backgroud-color="black">
+  <body>
     <center>
       <div id="message">Not Connected</div>
       <div id="slider"></div>
+      <canvas id="analyser" width="768" height="200"></canvas><br>
+      <canvas id="wavedisplay" width="768" height="200"></canvas><br>
     </center>
   </body>
 </html>

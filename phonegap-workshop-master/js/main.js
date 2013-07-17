@@ -103,4 +103,26 @@ function initSlider()
 
 };
 
+$(document).ready(function(){
+                    //CHRISTIE
+                    checkCookie();
+
+                    // start the socket.io connection and set up the handlers
+                    socket = io.connect('http://' + window.location.host);
+                    socket.on('connect', function(){
+                        $('div#message').html('Controller connected to server');
+                        socket.emit('newPlayer', {title: 'Multipong', name: name});
+                    });
+                    socket.on('playerConnected', function(data){
+                    if(data.error){
+                        $('div#message').html('Error: ' + data.error);
+                        socket.disconnect();
+                    }else{
+                        $('div#message').html(data.title + ' controller connected to display as player ' + name);
+                    }
+                    });
+                    initKey();
+                    initSlider();
+                });
+
 app.initialize();
