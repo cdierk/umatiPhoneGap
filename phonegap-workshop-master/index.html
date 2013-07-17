@@ -1,19 +1,4 @@
 <html>
-<body>
-
-<div class='header'><h1>Home</h1></div>
-<div class='search-view'>
-<input class='search-key' type="text"/>
-<ul class='employee-list'></ul>
-</div>
-
-<script src="lib/jquery-1.8.2.min.js"></script>
-<script src="js/storage/memory-store.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-</html>
-<html>
   <head>
     <title>Umati Controller</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -22,6 +7,9 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="lib/jquery-1.8.2.min.js"></script>
+	<script src="js/storage/memory-store.js"></script>
+	<script src="js/main.js"></script>
     <!--
     <link rel="stylesheet" href="/jquery-ui-1.9.2.css" />
     <script src="/jquery-1.7.1.min.js"></script>
@@ -38,18 +26,11 @@
          $( "#slider" ).slider({ orientation: "vertical", max: 4, min: 0 });
       });
     </script>
-    <style>
-      canvas { display: inline-block; background: #202020; box-shadow: 0px 0px 10px blue;}
-      #record.recording { background: red;
-      background: -webkit-radial-gradient(center, ellipse cover, #ff0000 0%,lightgrey 75%,lightgrey 100%,#7db9e8 100%); }
-    </style>
   </head>
-  <body>
+  <body backgroud-color="black">
     <center>
       <div id="message">Not Connected</div>
       <div id="slider"></div>
-      <canvas id="analyser" width="768" height="200"></canvas><br>
-      <canvas id="wavedisplay" width="768" height="200"></canvas><br>
     </center>
   </body>
 </html>
