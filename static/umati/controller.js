@@ -331,7 +331,7 @@ function updateAnalysers(time) {
         //CHRISTIE to check to see if there are any frequencies in bin 234 (corresponds to 20,173 Hz)
         //right now, proceeds if any of frequency is detected. Can easily change to make that number 
         //higher depending on the volume we are broadcasting and how far we want it to reach.
-        if(freqByteData[Math.floor(234*multiplier)] > 10){
+        //if(freqByteData[Math.floor(234*multiplier)] > 10){
             //CHRISTIE to make sure setup only happens once for each controller
             if (isConnected == false){
                 //moved from above, only happens if frequency is detected           
@@ -358,7 +358,7 @@ function updateAnalysers(time) {
                 });
                 isConnected = true;
             }
-        }
+        //}
         //CHRISTIE to check what frequency bin a frequency is in
         /*for (var i = 200; i < numBars; ++i){
             if (freqByteData[Math.floor(i*multiplier)] > 0){
